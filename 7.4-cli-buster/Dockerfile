@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 # pdo pdo_dblib pdo_firebird pdo_mysql pdo_oci pdo_odbc pdo_pgsql pdo_sqlite pgsql phar posix
 # pspell readline reflection session shmop simplexml snmp soap sockets sodium spl standard
 # sysvmsg sysvsem sysvshm tidy tokenizer xml xmlreader xmlrpc xmlwriter xsl zend_test zip
-RUN docker-php-ext-install bcmath curl json opcache pcntl pdo pdo_mysql zip sockets soap gd exif xml
+RUN docker-php-ext-install bcmath curl json pcntl pdo pdo_mysql zip sockets soap gd exif xml
 RUN pecl install redis
 RUN pecl install vips
 RUN pecl install swoole
